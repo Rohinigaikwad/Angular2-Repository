@@ -11,6 +11,17 @@ import { PricingNavComponent } from './bootstrap-pricing/pricing-nav.component';
 import { CardContainerComponent } from './bootstrap-pricing/card-container/card-container.component';
 import { FooterContainerComponent } from './bootstrap-pricing/footer-container/footer-container.component';
 import { PricingCardComponent } from './bootstrap-pricing/card-container/pricing-card.component';
+import { CheckoutFormComponent } from './checkout-form/checkout-form.component';
+import { InformationComponent } from './checkout-form/information.component';
+import { CartComponent } from './checkout-form/cart/cart.component';
+import { BillingAddressComponent } from './checkout-form/billing-address/billing-address.component';
+import { SelectorComponent } from './checkout-form/selector/selector.component';
+import { CheckboxComponent } from './checkout-form/checkbox/checkbox.component';
+import { PaymentComponent } from './checkout-form/payment/payment.component';
+import { CardDetailsComponent } from './checkout-form/payment/card-details.component';
+import { CardExpirationComponent } from './checkout-form/payment/card-expiration.component';
+import { ContinueButtonComponent } from './checkout-form/continue-button/continue-button.component';
+import { FooterComponent } from './checkout-form/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +34,18 @@ import { PricingCardComponent } from './bootstrap-pricing/card-container/pricing
     PricingNavComponent,
     CardContainerComponent,
     FooterContainerComponent,
-    PricingCardComponent
+    PricingCardComponent,
+    CheckoutFormComponent,
+    InformationComponent,
+    CartComponent,
+    BillingAddressComponent,
+    SelectorComponent,
+    CheckboxComponent,
+    PaymentComponent,
+    CardDetailsComponent,
+    CardExpirationComponent,
+    ContinueButtonComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule

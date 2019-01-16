@@ -1,0 +1,15 @@
+.container{
+  max-width: 960px;
+}
+/*row {
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
+
+  flex-wrap: wrap;
+  max-width: 960px;
+}*/
+.margin{
+  margin-left: initial;
+}
+
