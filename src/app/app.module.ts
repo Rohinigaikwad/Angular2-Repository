@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { TitleBarComponent } from './title-bar/title-bar.component';
@@ -22,6 +22,9 @@ import { CardDetailsComponent } from './checkout-form/payment/card-details.compo
 import { CardExpirationComponent } from './checkout-form/payment/card-expiration.component';
 import { ContinueButtonComponent } from './checkout-form/continue-button/continue-button.component';
 import { FooterComponent } from './checkout-form/footer/footer.component';
+import { DatabindingComponent } from './databinding/databinding.component';
+import { from } from 'rxjs';
+import { CalculatorComponent } from './databinding/calculator/calculator.component';
 
 @NgModule({
   declarations: [
@@ -45,10 +48,13 @@ import { FooterComponent } from './checkout-form/footer/footer.component';
     CardDetailsComponent,
     CardExpirationComponent,
     ContinueButtonComponent,
-    FooterComponent
+    FooterComponent,
+    DatabindingComponent,
+    CalculatorComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+     FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
