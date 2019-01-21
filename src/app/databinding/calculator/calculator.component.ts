@@ -6,11 +6,36 @@ import { Component } from '@angular/core';
   styleUrls: ['./calculator.component.css']
 })
 export class CalculatorComponent {
-public num1: number;
-public num2: number;
-public result: number;
 
-addition() {
+result: string;
+clearTotal: boolean;
+
+constructor() {
+  this.result = '';
+  this.clearTotal = false;
+}
+key(value: string) {
+  if (this.clearTotal === true) {
+    this.result = '';
+    this.result += value;
+    this.clearTotal = false;
+  } else {
+    this.result += value;
+    this.clearTotal = false;
+  }
+  }
+  clear() {
+    this.result = '';
+  }
+  evaluate() {
+    this.clearTotal = true;
+    // tslint:disable-next-line:no-eval
+    this.result = eval(this.result);
+  }
+
+}
+
+/*addition() {
   this.result = this.num1 + this.num2;
 }
 
@@ -22,7 +47,6 @@ multi() {
 }
 divide() {
   this.result = (this.num1) / (this.num2);
-}
+}*/
 
 
-}
